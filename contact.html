@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+        content="Ready to start your project? Contact DeveloperBee today for a free consultation and quote on web, app, and digital services."
+        name="description" />
+    <title>
+        Contact DeveloperBee | Get a Free Consultation
+    </title>
+    <link href="https://www.developerbee.digital/contact.html" rel="canonical" />
+    <meta content="contact web developers, hire developers, project consultation" name="keywords" />
+    <script type="application/ld+json">
+   {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "DeveloperBee",
+      "image": "https://www.developerbee.digital/static/Design.jpeg",
+      "url": "https://www.developerbee.digital",
+      "telephone": "+91-702-197-5373",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mumbai",
+        "addressLocality": "Mumbai",
+        "addressRegion": "MH",
+        "addressCountry": "IN"
+      },
+      "priceRange": "$$$"
+    }
+  </script>
+    <link href="static/style.css" rel="stylesheet" />
+    <link href="static/mobile-optimization.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body style="background:#000; margin:0; padding-top: 100px;">
+    <div id="preloader">
+        <div class="spinner">
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&amp;display=swap" rel="stylesheet" />
+    <style>
+        /* ========================================================================= */
+        /* 1. ISLAND HEADER: Reduced Height, Transparency, and Blur */
+        /* ========================================================================= */
+        .island-header {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* AGGRESSIVELY REDUCED VERTICAL PADDING for THINNER BAR */
+            padding: 0.3em 1.5em;
+            width: min(97vw, 1050px);
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 3em;
+            box-shadow: 0 6px 32px #5ff7ff22, 0 0 0 4px #5ff7ff12;
+            border: 1.7px solid #5FF7FF44;
+            z-index: 1300;
+            transition: box-shadow 0.3s, border-color 0.3s;
+            font-family: 'Montserrat', Arial, sans-serif;
+            backdrop-filter: blur(8px);
+        }
+
+        /* ========================================================================= */
+        /* 2. LOGO, NAVIGATION LINKS, AND ACTION BUTTON: Spacing & Logo Size */
+        /* ========================================================================= */
+        .island-logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.3em;
+            color: #5ff7ff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            /* TIGHTER SPACING after logo */
+            padding-right: 0.6em;
+        }
+
+        .island-logo img {
+            /* INCREASED LOGO SIZE */
+            height: 42px;
+            /* Increased from 34px */
+            width: auto;
+            margin-right: .6em;
+            border-radius: 0.6em;
+        }
+
+        .island-nav {
+            display: flex;
+            /* TIGHTER SPACING between links */
+            gap: 0.7em;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .island-nav li {
+            list-style: none;
+            position: relative;
+        }
+
+        .island-nav a {
+            color: #eafffa;
+            text-decoration: none;
+            font-weight: 600;
+            /* TIGHTER PADDING around link text */
+            padding: 0.3em 0.8em;
+            border-radius: .6em;
+            font-size: 1em;
+            display: block;
+            transition: color .21s, background .2s;
+        }
+
+        .island-nav a:hover,
+        .island-nav a.active {
+            color: #5FF7FF;
+            background: #191e23;
+        }
+
+        /* Dropdown menu (kept consistent with transparency/blur) */
+        .services-dropdown {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background: rgba(25, 25, 32, 0.9);
+            border-radius: 0.7em;
+            min-width: 194px;
+            box-shadow: 0 4px 16px #171c1e88;
+            z-index: 1001;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 0.2em 0;
+            margin-top: .17em;
+            backdrop-filter: blur(4px);
+        }
+
+        .island-nav li:focus-within>.services-dropdown,
+        .island-nav li:hover>.services-dropdown {
+            display: flex !important;
+        }
+
+        .services-dropdown a {
+            color: #eafffa;
+            background: none;
+            font-size: 0.98em;
+            border-radius: 0;
+            padding: .83em 1.15em;
+        }
+
+        .services-dropdown a:hover {
+            background: #101215;
+            color: #5FF7FF;
+        }
+
+        .island-action {
+            /* TIGHTER SPACING before button */
+            margin-left: 0.6em;
+        }
+
+        .nav-contact-btn {
+            background: #5FF7FF;
+            color: #191e23;
+            border: none;
+            border-radius: 1.3em;
+            font-weight: 700;
+            font-size: 1em;
+            padding: .44em 1.3em;
+            box-shadow: 0 2px 8px #5ff7ff55;
+            cursor: pointer;
+            transition: .2s;
+            text-decoration: none;
+            margin-left: 0.2em;
+        }
+
+        .nav-contact-btn:hover {
+            background: #fffde7;
+            color: #131618;
+        }
+
+        /* ========================================================================= */
+        /* 3. MOBILE OPTIMIZATION (max-width:800px) */
+        /* ========================================================================= */
+        @media (max-width:800px) {
+            .island-header {
+                /* ENSURE SIDE MARGINS ARE VISIBLE */
+                width: 90vw;
+                padding: 0.5em 0.8em;
+                /* Good internal padding */
+                font-size: 1em;
+            }
+
+            .island-logo {
+                font-size: .93em;
+            }
+
+            /* INCREASED LOGO SIZE FOR MOBILE */
+            .island-logo img {
+                height: 38px;
+                /* Slightly smaller than desktop but still larger than original */
+            }
+
+            .island-action {
+                margin-left: .5em;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .island-nav {
+                position: fixed;
+                flex-direction: column;
+                gap: 0.3em;
+                align-items: flex-start;
+                background: rgba(0, 0, 0, 0.9);
+                backdrop-filter: blur(8px);
+                top: 65px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 1.3em;
+                width: 90vw;
+                /* Aligns with header width */
+                max-width: 330px;
+                box-shadow: 0 8px 40px #181e2844;
+                padding: 1em 1em 1em 1.1em;
+                opacity: 0;
+                pointer-events: none;
+                z-index: 1401;
+                transition: opacity .23s;
+            }
+
+            .island-nav.open {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .island-nav li {
+                width: 100%;
+            }
+
+            .services-dropdown {
+                position: static;
+                margin: .3em 0 0 0;
+            }
+        }
+
+        /* ========================================================================= */
+        /* 4. SMALL MOBILE OPTIMIZATION (max-width:420px) */
+        /* ========================================================================= */
+        @media (max-width:420px) {
+            .island-header {
+                width: 90vw;
+                padding: 0.3em 0.7em;
+            }
+
+            /* INCREASED LOGO SIZE FOR VERY SMALL MOBILE */
+            .island-logo img {
+                height: 30px;
+            }
+
+            /* Increased from 27px */
+            .island-nav {
+                min-width: 90vw;
+                width: 90vw;
+                padding: 0.7em 0.5em;
+            }
+
+            .nav-contact-btn {
+                font-size: 0.92em;
+            }
+        }
+    </style>
+    <header class="island-header" id="mainHeader">
+        <div class="island-logo">
+            <img alt="DeveloperBee Logo - a stylized bee in shades of cyan and black" loading="lazy"
+                src="static/Design.jpeg" />
+            DeveloperBee
+        </div>
+        <button aria-label="Menu" class="hamburger" id="navToggle" tabindex="0">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+        </button>
+        <ul class="island-nav" id="headerNav">
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li tabindex="0">
+                <a href="services.html">
+                    Services
+                </a>
+                <div class="services-dropdown">
+                    <a href="services.html#web-app-development">
+                        Web &amp; App Development
+                    </a>
+                    <a href="services.html#ui-ux-design">
+                        UI/UX Design
+                    </a>
+                    <a href="services.html#seo-site-optimization">
+                        SEO &amp; Optimization
+                    </a>
+                    <a href="services.html#ml-automation">
+                        ML &amp; Automation
+                    </a>
+                    <a href="services.html#business-analysis">
+                        Business Analysis
+                    </a>
+                    <a href="services.html#product-packaging">
+                        Product Packaging
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="pricing.html">
+                    Pricing
+                </a>
+            </li>
+
+        </ul>
+        <div class="island-action">
+            <a class="nav-contact-btn" href="contact.html">
+                Contact Us
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="bottom-contact-form" id="contact-form">
+            <section class="contact-us-section">
+                <h1 class="section-title">
+                    Let's Build Something Great
+                </h1>
+                <p class="section-intro">
+                    Ready to start your project? As a leading
+                    <strong>
+                        software development company in Mumbai
+                    </strong>
+                    , we're here to help. Reach out for a free consultation and let's discuss how we can bring your
+                    vision to life.
+                </p>
+                <div class="contact-us-content">
+                    <div class="contact-form-container">
+                        <h3>
+                            Send Us a Message
+                        </h3>
+                        <form action="#" class="contact-form" id="contactForm" method="POST">
+                            <div class="form-group">
+                                <label for="name">
+                                    Full Name *
+                                </label>
+                                <input id="name" name="name" required="" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address *
+                                </label>
+                                <input id="email" name="email" required="" type="email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+                                <input id="phone" name="phone" type="tel" />
+                            </div>
+                            <div class="form-group">
+                                <label for="service">
+                                    Service Interest
+                                </label>
+                                <select id="service" name="service">
+                                    <option value="">
+                                        Select a service
+                                    </option>
+                                    <option value="web-development">
+                                        Web &amp; App Development
+                                    </option>
+                                    <option value="ui-ux-design">
+                                        UI/UX Design
+                                    </option>
+                                    <option value="seo-optimization">
+                                        SEO &amp; Site Optimization
+                                    </option>
+                                    <option value="ml-automation">
+                                        ML &amp; Automation
+                                    </option>
+                                    <option value="business-analysis">
+                                        Business Analysis
+                                    </option>
+                                    <option value="product-packaging">
+                                        Cybersecurity Audit
+                                    </option>
+                                    <option value="other">
+                                        Other
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">
+                                    Budget Range
+                                </label>
+                                <select id="budget" name="budget">
+                                    <option value="">
+                                        Select budget range
+                                    </option>
+                                    <option value="">
+                                        try pakage of 199/699
+                                    </option>
+                                    <option value="under-5k">
+                                        Under 5,000
+                                    </option>
+                                    <option value="5k-10k">
+                                        5,000 - 10,000
+                                    </option>
+                                    <option value="10k-25k">
+                                        10,000 - 25,000
+                                    </option>
+                                    <option value="25k-50k">
+                                        25,000 - 50,000
+                                    </option>
+                                    <option value="over-50k">
+                                        Over 50,000
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">
+                                    Project Details *
+                                </label>
+                                <textarea id="message" name="message"
+                                    placeholder="Tell us about your project, goals, and any specific requirements..."
+                                    required=""></textarea>
+                            </div>
+                            <button class="btn" type="submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-info-container">
+                        <h3>
+                            Our Mumbai Office
+                        </h3>
+                        <p>
+                            As a leading
+                            <strong>
+                                digital marketing agency near you
+                            </strong>
+                            , we are always available to discuss your project. We proudly serve clients in Mumbai,
+                            Thane, Navi Mumbai, and across India.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <h4>
+                                    <i class="fas fa-map-marker-alt">
+                                    </i>
+                                    Address
+                                </h4>
+                                <br />
+                                <p>
+                                    Mumbai, Maharashtra, India
+                                </p>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>
+                                    <i class="fas fa-envelope">
+                                    </i>
+                                    Email for a Free Quote
+                                </h4>
+                                <br />
+                                <p>
+                                    <a href="mailto:info@www.developerbee.digital">
+                                        info@www.developerbee.digital
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>
+                                    <i class="fas fa-phone">
+                                    </i>
+                                    Call for a Consultation
+                                </h4>
+                                <br />
+                                <p>
+                                    <a href="tel:+917021975373">
+                                        +91 7021975373
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- ✅ FOOTER (UNCHANGED) -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img alt="DeveloperBee Logo - a stylized bee in shades of cyan and black" class="footer-logo"
+                        loading="lazy" src="static/Design.jpeg" />
+                    <span class="footer-brand-name">
+                        DeveloperBee
+                    </span>
+                </div>
+                <div class="footer-links">
+                    <h4>
+                        Quick Links
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">
+                                Pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>
+                        Our Expertise
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="services/ai-automation.html">
+                                AI &amp; Automation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services/cybersecurity.html">
+                                Cyber Security
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services/digital-marketing.html">
+                                Digital Growth
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services/web-app-development.html">
+                                Web &amp; App Dev
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>
+                        Get in Touch
+                    </h4>
+                    <p>
+                        Email:
+                        <a href="mailto:developerbee.off@gmail.com">
+                            info@developerbee.com
+                        </a>
+                    </p>
+                    <p>
+                        Phone:
+                        <a href="tel:+917021975373">
+                            +91 7021975373
+                        </a>
+                    </p>
+                    <p>
+                        Location: Remote / Global
+                    </p>
+                    <p>
+                        From India's heart to the world's stage.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" title="Facebook">
+                        <span class="fab fa-facebook-f">
+                        </span>
+                        Facebook
+                    </a>
+                    <a href="#" title="Twitter">
+                        <span class="fab fa-twitter">
+                        </span>
+                        Twitter
+                    </a>
+                    <a href="#" title="LinkedIn">
+                        <span class="fab fa-linkedin-in">
+                        </span>
+                        LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/www.developerbee.digital/" title="Instagram">
+                        <span class="fab fa-instagram">
+                        </span>
+                        Instagram
+                    </a>
+                </div>
+                <p class="footer-copyright">
+                    © 2025 DeveloperBee. All rights reserved. | Built with
+                    relentless dedication.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="static/header.js">
+    </script>
+    <script src="static/script.js">
+    </script>
+    <a aria-label="Chat on WhatsApp" class="whatsapp-float"
+        href="https://wa.me/917021975373?text=Get%20free%20consultation%20from%20professionals%20directly%20on%20WhatsApp%2024X7"
+        target="_blank">
+        <img alt="WhatsApp" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
+    </a>
+    <button id="scrollToTopBtn" title="Go to top">
+        ▲
+    </button>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappNumber = '7021975373';
+            const whatsappMessage = `Hello, I'm ${name}. My email is ${email}. My message is: ${message}`;
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            window.location.href = whatsappUrl;
+        });
+    </script>
+</body>
+
+</html>

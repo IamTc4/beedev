@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>
+    Our Work &amp; Case Studies | DeveloperBee Portfolio
+  </title>
+  <meta
+    content="Explore our successful projects in FinTech, Healthcare, E-commerce, and more. See how we deliver results for global clients."
+    name="description" />
+  <link href="https://www.developerbee.digital/portfolio.html" rel="canonical" />
+  <meta content="software case studies, web development portfolio, app projects" name="keywords" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="static/style.css" rel="stylesheet" />
+  <link href="static/mobile-optimization.css" rel="stylesheet" />
+  <!-- JSON-LD Structured Data for CollectionPage -->
+  <script type="application/ld+json">
+   {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "DeveloperBee Project Portfolio",
+      "description": "A collection of our best work in web development, UI/UX, and AI automation.",
+      "url": "https://www.developerbee.digital/portfolio.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.developerbee.digital/project-ecommerce-platform.html",
+            "name": "E-Commerce Platform"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://www.developerbee.digital/project-crm-system.html",
+            "name": "CRM System"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://www.developerbee.digital/project-mobile-app-design.html",
+            "name": "Mobile App Design"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://www.developerbee.digital/project-healthcare-portal.html",
+            "name": "Healthcare Portal"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://www.developerbee.digital/project-ai-chatbot.html",
+            "name": "AI Chatbot"
+          }
+        ]
+      }
+    }
+  </script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
+    rel="stylesheet" />
+
+  <style>
+    .more-projects-section {
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .section-title {
+      color: #5FF7FF;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .project-pills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .project-pill {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(95, 247, 255, 0.2);
+      color: #eafffa;
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+    }
+
+    .project-pill:hover {
+      background: rgba(95, 247, 255, 0.1);
+      border-color: #5FF7FF;
+      color: #5FF7FF;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(95, 247, 255, 0.15);
+    }
+  </style>
+
+</head>
+
+<body style="background:#000; margin:0; padding-top: 100px;">
+  <div id="preloader">
+    <div class="spinner">
+    </div>
+  </div>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&amp;display=swap" rel="stylesheet" />
+  <style>
+    /* ========================================================================= */
+    /* 1. ISLAND HEADER: Reduced Height, Transparency, and Blur */
+    /* ========================================================================= */
+    .island-header {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* AGGRESSIVELY REDUCED VERTICAL PADDING for THINNER BAR */
+      padding: 0.3em 1.5em;
+      width: min(97vw, 1050px);
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 3em;
+      box-shadow: 0 6px 32px #5ff7ff22, 0 0 0 4px #5ff7ff12;
+      border: 1.7px solid #5FF7FF44;
+      z-index: 1300;
+      transition: box-shadow 0.3s, border-color 0.3s;
+      font-family: 'Montserrat', Arial, sans-serif;
+      backdrop-filter: blur(8px);
+    }
+
+    /* ========================================================================= */
+    /* 2. LOGO, NAVIGATION LINKS, AND ACTION BUTTON: Spacing & Logo Size */
+    /* ========================================================================= */
+    .island-logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.3em;
+      color: #5ff7ff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      /* TIGHTER SPACING after logo */
+      padding-right: 0.6em;
+    }
+
+    .island-logo img {
+      /* INCREASED LOGO SIZE */
+      height: 42px;
+      /* Increased from 34px */
+      width: auto;
+      margin-right: .6em;
+      border-radius: 0.6em;
+    }
+
+    .island-nav {
+      display: flex;
+      /* TIGHTER SPACING between links */
+      gap: 0.7em;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .island-nav li {
+      list-style: none;
+      position: relative;
+    }
+
+    .island-nav a {
+      color: #eafffa;
+      text-decoration: none;
+      font-weight: 600;
+      /* TIGHTER PADDING around link text */
+      padding: 0.3em 0.8em;
+      border-radius: .6em;
+      font-size: 1em;
+      display: block;
+      transition: color .21s, background .2s;
+    }
+
+    .island-nav a:hover,
+    .island-nav a.active {
+      color: #5FF7FF;
+      background: #191e23;
+    }
+
+    /* Dropdown menu (kept consistent with transparency/blur) */
+    .services-dropdown {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background: rgba(25, 25, 32, 0.9);
+      border-radius: 0.7em;
+      min-width: 194px;
+      box-shadow: 0 4px 16px #171c1e88;
+      z-index: 1001;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 0.2em 0;
+      margin-top: .17em;
+      backdrop-filter: blur(4px);
+    }
+
+    .island-nav li:focus-within>.services-dropdown,
+    .island-nav li:hover>.services-dropdown {
+      display: flex !important;
+    }
+
+    .services-dropdown a {
+      color: #eafffa;
+      background: none;
+      font-size: 0.98em;
+      border-radius: 0;
+      padding: .83em 1.15em;
+    }
+
+    .services-dropdown a:hover {
+      background: #101215;
+      color: #5FF7FF;
+    }
+
+    .island-action {
+      /* TIGHTER SPACING before button */
+      margin-left: 0.6em;
+    }
+
+    .nav-contact-btn {
+      background: #5FF7FF;
+      color: #191e23;
+      border: none;
+      border-radius: 1.3em;
+      font-weight: 700;
+      font-size: 1em;
+      padding: .44em 1.3em;
+      box-shadow: 0 2px 8px #5ff7ff55;
+      cursor: pointer;
+      transition: .2s;
+      text-decoration: none;
+      margin-left: 0.2em;
+    }
+
+    .nav-contact-btn:hover {
+      background: #fffde7;
+      color: #131618;
+    }
+
+    /* ========================================================================= */
+    /* 3. MOBILE OPTIMIZATION (max-width:800px) */
+    /* ========================================================================= */
+    @media (max-width:800px) {
+      .island-header {
+        /* ENSURE SIDE MARGINS ARE VISIBLE */
+        width: 90vw;
+        padding: 0.5em 0.8em;
+        /* Good internal padding */
+        font-size: 1em;
+      }
+
+      .island-logo {
+        font-size: .93em;
+      }
+
+      /* INCREASED LOGO SIZE FOR MOBILE */
+      .island-logo img {
+        height: 38px;
+        /* Slightly smaller than desktop but still larger than original */
+      }
+
+      .island-action {
+        margin-left: .5em;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .island-nav {
+        position: fixed;
+        flex-direction: column;
+        gap: 0.3em;
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(8px);
+        top: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 1.3em;
+        width: 90vw;
+        /* Aligns with header width */
+        max-width: 330px;
+        box-shadow: 0 8px 40px #181e2844;
+        padding: 1em 1em 1em 1.1em;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 1401;
+        transition: opacity .23s;
+      }
+
+      .island-nav.open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .island-nav li {
+        width: 100%;
+      }
+
+      .services-dropdown {
+        position: static;
+        margin: .3em 0 0 0;
+      }
+    }
+
+    /* ========================================================================= */
+    /* 4. SMALL MOBILE OPTIMIZATION (max-width:420px) */
+    /* ========================================================================= */
+    @media (max-width:420px) {
+      .island-header {
+        width: 90vw;
+        padding: 0.3em 0.7em;
+      }
+
+      /* INCREASED LOGO SIZE FOR VERY SMALL MOBILE */
+      .island-logo img {
+        height: 30px;
+      }
+
+      /* Increased from 27px */
+      .island-nav {
+        min-width: 90vw;
+        width: 90vw;
+        padding: 0.7em 0.5em;
+      }
+
+      .nav-contact-btn {
+        font-size: 0.92em;
+      }
+    }
+  </style>
+  <header class="island-header" id="mainHeader">
+    <div class="island-logo">
+      <img alt="DeveloperBee Logo - a stylized bee in shades of cyan and black" loading="lazy"
+        src="static/Design.jpeg" />
+      DeveloperBee
+    </div>
+    <button aria-label="Menu" class="hamburger" id="navToggle" tabindex="0">
+      <span>
+      </span>
+      <span>
+      </span>
+      <span>
+      </span>
+    </button>
+    <ul class="island-nav" id="headerNav">
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+      <li tabindex="0">
+        <a href="services.html">
+          Services
+        </a>
+        <div class="services-dropdown">
+          <a href="services.html#web-app-development">
+            Web &amp; App Development
+          </a>
+          <a href="services.html#ui-ux-design">
+            UI/UX Design
+          </a>
+          <a href="services.html#seo-site-optimization">
+            SEO &amp; Optimization
+          </a>
+          <a href="services.html#ml-automation">
+            ML &amp; Automation
+          </a>
+          <a href="services.html#business-analysis">
+            Business Analysis
+          </a>
+          <a href="services.html#product-packaging">
+            Product Packaging
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="portfolio.html">
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          About Us
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+      <li>
+        <a href="pricing.html">
+          Pricing
+        </a>
+      </li>
+
+    </ul>
+    <div class="island-action">
+      <a class="nav-contact-btn" href="contact.html">
+        Contact Us
+      </a>
+    </div>
+  </header>
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function () {
+      var h = document.getElementById('mainHeader');
+      if (window.scrollY > 10) h.classList.add('active');
+      else h.classList.remove('active');
+    });
+    // Hamburger menu for mobile
+    const navBtn = document.getElementById('navToggle');
+    const navMenu = document.getElementById('headerNav');
+    navBtn.addEventListener('click', function () {
+      navMenu.classList.toggle('open');
+    });
+    // Accessibility: close nav on outside click/mobile tap
+    document.addEventListener('click', function (e) {
+      if (window.innerWidth < 820) {
+        if (!navMenu.contains(e.target) && !navBtn.contains(e.target)) {
+          navMenu.classList.remove('open');
+        }
+      }
+    });
+    // Optional: close menu after link click (mobile UX)
+    document.querySelectorAll('.island-nav a').forEach(link =>
+      link.addEventListener('click', function () {
+        if (window.innerWidth < 820) navMenu.classList.remove('open');
+      })
+    );
+  </script>
+  <main>
+    <section class="portfolio-hero">
+      <div class="container">
+        <h1 class="portfolio-title">
+          Our Portfolio of Success
+        </h1>
+        <p class="portfolio-subtitle">
+          Explore a selection of our best web and app development projects. As a leading software development company in
+          Mumbai, we deliver impactful solutions for our clients.
+        </p>
+        <div class="portfolio-filter">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+              All Projects
+            </button>
+            <button class="filter-btn" data-filter="web-development">
+              Web Development
+            </button>
+            <button class="filter-btn" data-filter="ui-ux">
+              UI/UX Design
+            </button>
+            <button class="filter-btn" data-filter="branding">
+              Branding
+            </button>
+            <button class="filter-btn" data-filter="automation">
+              ML & Automation
+            </button>
+            <button class="filter-btn" data-filter="analytics">
+              Data Analytics
+            </button>
+          </div>
+        </div>
+        <style>
+          /* Oval-shaped filter buttons */
+          .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 30px;
+          }
+
+          .filter-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(95, 247, 255, 0.3);
+            color: #eafffa;
+            padding: 12px 28px;
+            border-radius: 50px;
+            /* Oval shape */
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            text-transform: capitalize;
+          }
+
+          .filter-btn:hover {
+            background: rgba(95, 247, 255, 0.1);
+            border-color: #5FF7FF;
+            color: #5FF7FF;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(95, 247, 255, 0.2);
+          }
+
+          .filter-btn.active {
+            background: linear-gradient(135deg, #5FF7FF 0%, #00d4ff 100%);
+            border-color: #5FF7FF;
+            color: #0a0a0a;
+            box-shadow: 0 4px 20px rgba(95, 247, 255, 0.4);
+          }
+
+          @media (max-width: 768px) {
+            .filter-buttons {
+              gap: 8px;
+            }
+
+            .filter-btn {
+              padding: 10px 20px;
+              font-size: 0.85rem;
+            }
+          }
+        </style>
+      </div>
+    </section>
+    <section class="portfolio-grid-section">
+      <div class="container">
+        <div class="portfolio-grid">
+          <div class="project-card" data-category="web-development">
+            <div class="project-image">
+              <img alt="E-Commerce Platform" loading="lazy" src="static\photo\ecoms.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    E-Commerce Platform
+                  </h3>
+                  <p>
+                    Full-stack e-commerce solution with advanced features
+                  </p>
+                  <a class="view-project" href="projects/project-ecommerce-platform.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="web-development">
+            <div class="project-image">
+              <img alt="CRM System" loading="lazy" src="static\photo\crm.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    CRM System
+                  </h3>
+                  <p>
+                    Custom customer relationship management platform
+                  </p>
+                  <a class="view-project" href="projects/project-crm-system.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="ui-ux">
+            <div class="project-image">
+              <video alt="Mobile App Design" autoplay="" loop="" muted="" src="static\photo\Fitness_App.mp4">
+              </video>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Mobile App Design
+                  </h3>
+                  <p>
+                    Complete UI/UX design for fitness tracking app
+                  </p>
+                  <a class="view-project" href="projects/project-mobile-app-design.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="ui-ux">
+            <div class="project-image">
+              <video alt="Healthcare Portal" autoplay="" loop="" muted="" src="static\photo\Healthcare_Portal.mp4">
+              </video>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Healthcare Portal
+                  </h3>
+                  <p>
+                    Patient management system with intuitive interface
+                  </p>
+                  <a class="view-project" href="projects/project-healthcare-portal.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="ui-ux">
+            <div class="project-image">
+              <video alt="E-Learning Platform" autoplay="" loop="" muted="" src="static\photo\E_Learning_Platform.mp4">
+              </video>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    E-Learning Platform
+                  </h3>
+                  <p>
+                    Interactive learning management system design
+                  </p>
+                  <a class="view-project" href="projects/project-e-learning-platform.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="branding">
+            <div class="project-image">
+              <video alt="Tech Startup Brand" autoplay="" loop="" muted="" src="static\photo\startup.mp4">
+              </video>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Tech Startup Brand
+                  </h3>
+                  <p>
+                    Complete brand identity for AI-powered startup
+                  </p>
+                  <a class="view-project" href="projects/project-tech-startup-brand.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="branding">
+            <div class="project-image">
+              <img alt="Restaurant Branding" loading="lazy" src="static\photo\brand.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Restaurant Branding
+                  </h3>
+                  <p>
+                    Visual identity and packaging for premium restaurant
+                  </p>
+                  <a class="view-project" href="projects/project-restaurant-branding.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="branding">
+            <div class="project-image">
+              <img alt="Wellness Brand" loading="lazy" src="static\photo\brand2.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Wellness Brand
+                  </h3>
+                  <p>
+                    Complete brand identity for health &amp; wellness company
+                  </p>
+                  <a class="view-project" href="projects/project-wellness-brand.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="automation">
+            <div class="project-image">
+              <img alt="AI Chatbot" loading="lazy" src="static\photo\chatbot.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    AI Chatbot
+                  </h3>
+                  <p>
+                    Intelligent customer service automation system
+                  </p>
+                  <a class="view-project" href="projects/project-ai-chatbot.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="automation">
+            <div class="project-image">
+              <img alt="Process Automation" loading="lazy" src="static\photo\auto.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Process Automation
+                  </h3>
+                  <p>
+                    Workflow automation for manufacturing company
+                  </p>
+                  <a class="view-project" href="projects/project-process-automation.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="analytics">
+            <div class="project-image">
+              <img alt="Business Intelligence" loading="lazy" src="static\photo\buisanalytics.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Business Intelligence
+                  </h3>
+                  <p>
+                    Advanced analytics dashboard for retail chain
+                  </p>
+                  <a class="view-project" href="projects/project-business-intelligence.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="analytics">
+            <div class="project-image">
+              <img alt="Predictive Analytics" loading="lazy" src="static\photo\last.png" />
+              <div class="project-overlay">
+                <div class="project-info">
+                  <h3>
+                    Predictive Analytics
+                  </h3>
+                  <p>
+                    ML-powered forecasting for financial services
+                  </p>
+                  <a class="view-project" href="projects/project-predictive-analytics.html">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="more-projects-section">
+        <h2 class="section-title">More Case Studies</h2>
+        <div class="project-pills-container">
+          <a href="projects/agriculture-soil-monitoring.html" class="project-pill">Agriculture Soil Monitoring</a>
+          <a href="projects/ai-content-generator-tool.html" class="project-pill">Ai Content Generator Tool</a>
+          <a href="projects/automotive-inventory-system.html" class="project-pill">Automotive Inventory System</a>
+          <a href="projects/car-rental-booking-system.html" class="project-pill">Car Rental Booking System</a>
+          <a href="projects/construction-project-tracker.html" class="project-pill">Construction Tracker</a>
+          <a href="projects/crypto-wallet-mobile-app.html" class="project-pill">Crypto Wallet Mobile App</a>
+          <a href="projects/customer-support-chatbot.html" class="project-pill">Customer Support Chatbot</a>
+          <a href="projects/cybersecurity-audit-tool.html" class="project-pill">Cybersecurity Audit Tool</a>
+          <a href="projects/dental-clinic-patient-app.html" class="project-pill">Dental Clinic Patient App</a>
+          <a href="projects/ecommerce-ai-recommender.html" class="project-pill">Ecommerce Ai Recommender</a>
+          <a href="projects/edtech-learning-portal.html" class="project-pill">Edtech Learning Portal</a>
+          <a href="projects/event-management-saas.html" class="project-pill">Event Management Saas</a>
+          <a href="projects/fashion-retail-pwa.html" class="project-pill">Fashion Retail Pwa</a>
+          <a href="projects/fintech-dashboard-revamp.html" class="project-pill">Fintech Dashboard Revamp</a>
+          <a href="projects/fitness-tracking-wearable-ui.html" class="project-pill">Fitness Tracking Wearable Ui</a>
+          <a href="projects/food-delivery-fleet-app.html" class="project-pill">Food Delivery Fleet App</a>
+          <a href="projects/freelance-job-marketplace.html" class="project-pill">Freelance Job Marketplace</a>
+          <a href="projects/gaming-community-forum.html" class="project-pill">Gaming Community Forum</a>
+          <a href="projects/grocery-delivery-pwa.html" class="project-pill">Grocery Delivery Pwa</a>
+          <a href="projects/gym-management-software.html" class="project-pill">Gym Management Software</a>
+          <a href="projects/healthcare-telemedicine-app.html" class="project-pill">Healthcare Telemedicine App</a>
+          <a href="projects/hotel-reservation-engine.html" class="project-pill">Hotel Reservation Engine</a>
+          <a href="projects/hr-recruitment-portal.html" class="project-pill">Hr Recruitment Portal</a>
+          <a href="projects/influencer-marketing-platform.html" class="project-pill">Influencer Marketing Platform</a>
+          <a href="projects/insurance-claim-processor.html" class="project-pill">Insurance Claim Processor</a>
+          <a href="projects/language-learning-app.html" class="project-pill">Language Learning App</a>
+          <a href="projects/legal-document-automation.html" class="project-pill">Legal Document Automation</a>
+          <a href="projects/local-services-directory.html" class="project-pill">Local Services Directory</a>
+          <a href="projects/logistics-tracking-platform.html" class="project-pill">Logistics Tracking Platform</a>
+          <a href="projects/manufacturing-iot-dashboard.html" class="project-pill">Manufacturing Iot Dashboard</a>
+          <a href="projects/music-streaming-app-ui.html" class="project-pill">Music Streaming App Ui</a>
+          <a href="projects/news-aggregator-portal.html" class="project-pill">News Aggregator Portal</a>
+          <a href="projects/non-profit-donation-platform.html" class="project-pill">Non Profit Donation Platform</a>
+          <a href="projects/on-demand-laundry-app.html" class="project-pill">On Demand Laundry App</a>
+          <a href="projects/peer-to-peer-lending-app.html" class="project-pill">Peer To Peer Lending App</a>
+          <a href="projects/pet-care-booking-system.html" class="project-pill">Pet Care Booking System</a>
+          <a href="projects/podcast-hosting-platform.html" class="project-pill">Podcast Hosting Platform</a>
+          <a href="projects/real-estate-crm-automation.html" class="project-pill">Real Estate Crm Automation</a>
+          <a href="projects/recipe-sharing-network.html" class="project-pill">Recipe Sharing Network</a>
+          <a href="projects/remote-team-collaboration-hub.html" class="project-pill">Remote Team Collaboration Hub</a>
+          <a href="projects/restaurant-ordering-kiosk-ui.html" class="project-pill">Restaurant Ordering Kiosk Ui</a>
+          <a href="projects/smart-home-control-app.html" class="project-pill">Smart Home Control App</a>
+          <a href="projects/social-media-scheduler-saas.html" class="project-pill">Social Media Scheduler Saas</a>
+          <a href="projects/solar-energy-dashboard.html" class="project-pill">Solar Energy Dashboard</a>
+          <a href="projects/stock-trading-simulator.html" class="project-pill">Stock Trading Simulator</a>
+          <a href="projects/supply-chain-blockchain.html" class="project-pill">Supply Chain Blockchain</a>
+          <a href="projects/travel-booking-engine.html" class="project-pill">Travel Booking Engine</a>
+          <a href="projects/video-streaming-analytics.html" class="project-pill">Video Streaming Analytics</a>
+          <a href="projects/virtual-event-hall.html" class="project-pill">Virtual Event Hall</a>
+          <a href="projects/wedding-planning-assistant.html" class="project-pill">Wedding Planning Assistant</a>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <!-- ✅ FOOTER (UNCHANGED) -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img alt="DeveloperBee Logo - a stylized bee in shades of cyan and black" class="footer-logo" loading="lazy"
+            src="static/Design.jpeg" />
+          <span class="footer-brand-name">
+            DeveloperBee
+          </span>
+        </div>
+        <div class="footer-links">
+          <h4>
+            Quick Links
+          </h4>
+          <ul>
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="pricing.html">
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>
+            Our Expertise
+          </h4>
+          <ul>
+            <li>
+              <a href="services/ai-automation.html">
+                AI &amp; Automation
+              </a>
+            </li>
+            <li>
+              <a href="services/cybersecurity.html">
+                Cyber Security
+              </a>
+            </li>
+            <li>
+              <a href="services/digital-marketing.html">
+                Digital Growth
+              </a>
+            </li>
+            <li>
+              <a href="services/web-app-development.html">
+                Web &amp; App Dev
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>
+            Get in Touch
+          </h4>
+          <p>
+            Email:
+            <a href="mailto:developerbee.off@gmail.com">
+              info@developerbee.com
+            </a>
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+917021975373">
+              +91 7021975373
+            </a>
+          </p>
+          <p>
+            Location: Remote / Global
+          </p>
+          <p>
+            From India's heart to the world's stage.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#" title="Facebook">
+            <span class="fab fa-facebook-f">
+            </span>
+            Facebook
+          </a>
+          <a href="#" title="Twitter">
+            <span class="fab fa-twitter">
+            </span>
+            Twitter
+          </a>
+          <a href="#" title="LinkedIn">
+            <span class="fab fa-linkedin-in">
+            </span>
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/www.developerbee.digital/" title="Instagram">
+            <span class="fab fa-instagram">
+            </span>
+            Instagram
+          </a>
+        </div>
+        <p class="footer-copyright">
+          © 2025 DeveloperBee. All rights reserved. | Built with
+          relentless dedication.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="static/script.js">
+  </script>
+  <a aria-label="Chat on WhatsApp" class="whatsapp-float"
+    href="https://wa.me/917021975373?text=Get%20free%20consultation%20from%20professionals%20directly%20on%20WhatsApp%2024X7"
+    target="_blank">
+    <img alt="WhatsApp" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
+  </a>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to the clicked button
+          button.classList.add('active');
+
+          const filter = button.dataset.filter;
+
+          projectCards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
